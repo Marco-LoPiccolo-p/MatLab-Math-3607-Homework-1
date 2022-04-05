@@ -1,0 +1,35 @@
+Homework 1
+Problem 1 
+a.)
+b.)
+
+Problem 2
+
+a.)
+
+Problem 3
+
+Write a script which asks for a temperature in Fahrenheit. It should then output the temperature in degrees Celsius, kelvins, and degree Rankine . Then run your code with a temperature of 134 Degrees Fahrenheit.
+Fahrenheit = input('Input a temperature in Fahrenheit: ');
+Celsius = (Fahrenheit - 32) * (5 / 9);
+Kelvin = (Fahrenheit - 32) * (5 / 9) + 273.15;
+Rankine = Fahrenheit + 459.67;
+format Long g
+
+disp(['The Temperature in Celsius is: ', num2str(Celsius)])
+disp(['The Temperature in Kelvin is: ', num2str(Kelvin)])
+disp(['The Temperature in Rankine is: ', num2str(Rankine)])
+Problem 4
+Write a script that inputs the equatorial and polar radii and displays both the surface with the given formula and the approximation with the given formula.
+
+format long g
+r1 = input('Please enter the equatorial radius: ');
+r2 = input('Please enter the polar radius: ');
+gamma = acos(r1 / r2);
+surfaceArea = 2 * pi * (r1^2 + (r2^2 / sin(gamma)) * log(cos(gamma) / (1 - sin(gamma)) ));
+approximation = 4 * pi * ((r1 + r2) / 2)^2; 
+
+disp(['The Surface Area of the inputted equatorial and polar radii is : ', num2str(surfaceArea), ' km^2'])
+disp(['The Approximation of the inputted equatorial and polar radii is : ', num2str(approximation), ' km^2'])
+
+
